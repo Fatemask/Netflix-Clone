@@ -1,0 +1,11 @@
+.planScreen__plan{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    opacity: 0.8;
+}
+
+.planScreen__plan:hover {
+    opacity: 1;
+}
+
