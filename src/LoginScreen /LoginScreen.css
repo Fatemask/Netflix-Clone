@@ -1,7 +1,7 @@
 .loginScreen{
     position: relative;
     height: 100%;
-    background: url("../image/loginbg.jpeg") center no-repeat;
+    background: url("../image/loginbg.jpeg")    ;
     background-size: cover;
 }
 
