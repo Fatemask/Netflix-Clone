@@ -8,12 +8,12 @@ function Nav() {
     const [show, handleShow] = useState(false);
     const history = useHistory();
     const transitionNavbar = () => {
-        if (window.screenY > 30) {
+        var navbar = document.getElementById('nn');
+        
+        if (window.scrollY > 20) {
             handleShow(true);
-            console.log(true);
         } else {
             handleShow(false);
-            console.log(false);
         }
 
     }
@@ -24,7 +24,7 @@ function Nav() {
     }, []);
 
     return (
-        <div className={`nav ${show && "nav__black"}`}>
+        <div id="nn" className={`nav ${show && "nav__black"}`}>
             <div className="nav__contents" >
                 <img onClick={ ()=> history.push("/")} className="nav__logo" src={logo} alt="logo" />
                 <img onClick={()=>history.push("/profile")} className="nav__avatar" src={avatar} alt="avatar" />

@@ -12,7 +12,7 @@ function SignUpScreen() {
             emailRef.current.value,
             passwordRef.current.value
         ).then((res)=>{
-            console.log(res);
+            // console.log(res);
         }).catch((error)=>{
             alert(error.message);
         });
@@ -24,7 +24,7 @@ function SignUpScreen() {
             emailRef.current.value,
             passwordRef.current.value
         ).then((res)=>{
-            console.log(res);
+            // console.log(res);
         }).catch((error)=>{
             alert(error.message);
         });
@@ -35,7 +35,7 @@ function SignUpScreen() {
             <form>
                 <h1>Sign In</h1>
                 <input ref={emailRef} type="email" placeholder="email" required/>
-                <input ref={passwordRef} type="password" placeholder="password" required/>
+                <input ref={passwordRef} type="password" placeholder="password" minlength="6" required/>
                 <button onClick={signIn} type="submit">Sign In</button>
 
                 <h4>

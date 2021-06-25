@@ -6,6 +6,7 @@ import { selectUser } from '../features/userSlice';
 import { auth } from '../firebase';
 import './ProfileScreen.css';
 import PlanScreen from '../PlanScreen/PlanScreen';
+import Footer from '../Footer/footer.js';
 
 function ProfileScreen() {
     const user = useSelector(selectUser);
@@ -26,6 +27,9 @@ function ProfileScreen() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="profileScreen__footer">
+                <Footer/>
             </div>
         </div>
     )

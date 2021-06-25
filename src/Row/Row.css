@@ -1,4 +1,5 @@
-.row{
+
+.row__main{
     color: #fff;
     margin-left: 20px;
 }
@@ -35,3 +36,26 @@
     transform: scale(1.09);
     opacity: 1;
 }
+
+#popover-basic{
+    background-color: rgba(37, 37, 37, 0.96);
+    color: #fff;
+    border-radius: 8px;
+    width: 250px;
+    z-index: 1;
+}
+
+#popover-basic h3{
+    padding: 10px;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#popover-basic p{
+    padding: 10px;
+}
+
+
+
+
+
+

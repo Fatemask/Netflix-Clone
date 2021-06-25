@@ -4,12 +4,13 @@ import "./PlanScreen.css";
 import { selectUser } from '../features/userSlice';
 //import {loadStrip} from '@stripe/stripe-js';
 
+
 function PlanScreen() {
    const plans = [
     {
         name: 'Basic',
         price: '500/-',
-        desc:'480p',
+        desc:'480p+HD (Trailer only)',
         subscribe: true
     },
     {
@@ -31,6 +32,8 @@ function PlanScreen() {
         subscribe: false
     }
    ];
+
+   //stripe code//
     // const [products, setProducts] = setProducts([]);
     // const user = userSelector(selectUser);
     // const [subscription, setSubstcription] = useState(null);

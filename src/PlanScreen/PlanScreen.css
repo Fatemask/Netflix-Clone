@@ -9,11 +9,6 @@
     opacity: 1;
 }
 
-
-.planScreen__plandisabled > button {
-    background-color: gray !important;
-}
-
 .planScreen__plan > button {
     padding: 10px 20px;
     font-size: 1rem;
@@ -22,6 +17,10 @@
     font-weight: 600;
     border: none;
     cursor: pointer;
+}
+
+.planScreen__plandisabled {
+    background-color: gray !important;
 }
 
 

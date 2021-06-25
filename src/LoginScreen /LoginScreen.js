@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './LoginScreen.css';
 import logo from "../image/logo.png";
 import SignUpScreen from '../SignUpScreen/SignUpScreen';
+import Footer from '../Footer/footer.js';
 
 function LoginScreen() {
     const [signIn, setSignIn] = useState(false);
@@ -34,6 +35,7 @@ function LoginScreen() {
                 )}
                 
             </div>
+            <Footer/>
         </div>
     );
 }
