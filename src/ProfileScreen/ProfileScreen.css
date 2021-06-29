@@ -62,3 +62,14 @@
 .profileScreen__footer{
     margin-top: 12vh;
 }
+
+@media (min-width: 280px) and (max-width: 1024px){
+    .profileScreen__info{
+        display: block;
+    }
+
+    .profileScreen__details{
+       margin: 0;
+       margin-top: 20px;
+    }
+}

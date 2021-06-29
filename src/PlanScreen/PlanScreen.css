@@ -23,5 +23,16 @@
     background-color: gray !important;
 }
 
+@media (min-width: 280px) and (max-width: 1024px){
+    .planScreen__plan{
+        padding:20px 0;
+    }
+
+    .planScreen__plan > button{
+        padding: 5px;
+        margin-left: 10px;
+    }
+}
+
 
 
