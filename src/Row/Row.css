@@ -54,6 +54,15 @@
     padding: 10px;
 }
 
+.row__phoneview{
+    display: contents;
+}
+
+@media (min-width: 280px) and (max-width: 1024px){
+    .row__phoneview{
+        display: none;
+    }
+}
 
 
 

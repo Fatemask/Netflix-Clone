@@ -43,7 +43,7 @@ const Row =(props)=> {
 
     var popover = (
         <Popover id="popover-basic">
-            <div className="right">
+            <div className="right" className="row__phoneview">
             <h3>{movie.name ? movie.name : movie.title}</h3>
             <p>
                 {truncate(movie?.overview, 250)}
@@ -58,11 +58,11 @@ const Row =(props)=> {
             <div className="row__posters">
                 {movies.map((movie) =>
                     ((props.isLargeRow && movie.poster_path) || (!props.isLargeRow && movie.backdrop_path)) && (
-                    
-                     <OverlayTrigger
-                        placement="right" 
-                        overlay={popover}
-                    >                    
+
+                    <OverlayTrigger
+                    placement="right" 
+                    overlay={popover}
+                    > 
                         <img 
                         className={`row__poster ${props.isLargeRow && "row__posterLarge"}`} 
                         key={movie.id} 
@@ -70,11 +70,14 @@ const Row =(props)=> {
                         alt={movie.name}
                         onMouseEnter={() => setMovie(movie)}
                         onClick={()=> trailer(movie)}
-                        variant="success" />     
-                        
-                    </OverlayTrigger>
+                        variant="success" />                
+                      
+                     </OverlayTrigger>
                     
                 ))}
+
+                 
+
                     <div>
                         <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId={id} onClose={() => setOpen(false)} />
                     </div>
